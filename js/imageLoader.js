@@ -66,14 +66,25 @@ HamiltonvilleArt.ImageLoader = (function() {
     // API Function: Get Images
     // Give an Image Category Name (i.e. an image directory name) return the paths for all images in the category.
     function getImgPaths(imgCatName) {
+        if (typeof imgCatName === 'string') {
+            return imgCache[imgCatName];
+        
+        } else {
+            HamiltonvilleArt.Log.write({
+                obj: NAME,
+                fun: 'getImgPaths',
+                msg: 'ERROR. Invalid/Missing Image Category Name.'
+            });
 
+            return undefined;
+        }
     }
 
     // API Function: Get Image Categories.
     // Returns an array of the the available image categories.
     // Category names are also image directory names.
     function getImgCats() {
-
+        return Object.keys(imgCache);
     }
 
     // Public API
