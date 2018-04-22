@@ -1,9 +1,39 @@
 {
-    "artworkDirs" : [
-        "About",
-        "Illustration",
-        "Labels",
-        "Portraits",
-        "Posters-Prints"
+    "artworkImgs" : [
+        { 
+            "dirName" : "About",
+            "files" : [
+                "artist-photo.jpg"
+            ]
+        },
+        { 
+            "dirName" : "Illustration",
+            "files" : [
+                "burger-plate.jpg",
+                "caravan.jpg",
+                "chameleon-punk-color.jpg",
+                "critic-rectangle.jpg",
+                "horse-lady.jpg",
+                "il-sung.jpg",
+                "NMVNA-2016-Breakfast-Card-Front-CMYK.jpg",
+                "pointy-boots-2.jpg",
+                "punks.jpg",
+                "Sized-Postcard-Frontb-7x5-2015.jpg",
+                "Snake-1.jpg",
+                "x-moonrise-2"
+            ] 
+        },
+        { 
+            "dirName" : "Labels",
+            "files" : [] 
+        },
+        { 
+            "dirName" : "Portraits",
+            "files" : [] 
+        },
+        { 
+            "dirName" : "Posters-Prints",
+            "files" : []
+        }
     ]
 }
