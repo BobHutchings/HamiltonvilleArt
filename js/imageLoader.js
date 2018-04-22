@@ -1,5 +1,6 @@
 HamiltonvilleArt.ImageLoader = (function() {
     var NAME = 'HamiltonvilleArt.ImageLoader';
+    var isReady = false; // Set to TRUE when loadImages() is done.
 
     // Image Cache
     // POJO
@@ -46,6 +47,8 @@ HamiltonvilleArt.ImageLoader = (function() {
                     msg: 'Image Cache successfully populated. Image Category Count = ' + catCount
                 });
 
+                isReady = true;
+
             } catch (err) {
                 HamiltonvilleArt.Log.write({
                     obj: NAME,
@@ -87,9 +90,15 @@ HamiltonvilleArt.ImageLoader = (function() {
         return Object.keys(imgCache);
     }
 
+    // Return a Boolean indicating whether or not the Image Cache has finished initializing.
+    function getReadyState() {
+        return isReady;
+    }
+
     // Public API
     return {
-        getImgPaths : getImgPaths,
-        getImgCats  : getImgCats
+        getImgPaths   : getImgPaths,
+        getImgCats    : getImgCats,
+        getReadyState : getReadyState
     };
 })();
