@@ -130,9 +130,8 @@ HamiltonvilleArt.Ajax = function() {
      * @param {string}   config.href     - Request URL
      * @param {string}   [config.accept] - Accepted MIME type of the response (expressed as: type/sub-type) 
      * @param {function} [config.cb]     - Optional callback function
-     * @param {string}   [config.data]   - Optional request data
      */
-    this.ajaxGet = function(config) {
+    this.get = function(config) {
         config = (typeof config === 'object') ? config : {};
         config.reqType = 'GET';
         makeRequest(config);
@@ -148,7 +147,7 @@ HamiltonvilleArt.Ajax = function() {
      * @param {function} [config.cb]     - Optional callback function
      * @param {string}   [config.data]   - Optional request data
      */
-    this.ajaxPost = function(config) {
+    this.post = function(config) {
         config = (typeof config === 'object') ? config : {};
         config.reqType = 'POST';
         makeRequest(config);
