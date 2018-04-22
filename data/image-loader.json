@@ -25,15 +25,53 @@
         },
         { 
             "dirName" : "Labels",
-            "files" : [] 
+            "files" : [
+                "Air-Guitar-At-Work-While-No-One-Is-Watching-Can.jpg",
+                "Averill-Ice-Cider-Printer.jpg",
+                "Awkward-Hug-Can.jpg",
+                "Buddy-Sprinkles-Saves-the-Day-Can.jpg",
+                "Candy-Cap-Can.jpg",
+                "Just-Gonna-Can.jpg",
+                "Maybe-Both-Can.jpg",
+                "Pankcake-Town-Can.jpg",
+                "Shadow-Pyramids-Final.jpg",
+                "Substrate-A-Can.jpg",
+                "Super-Sparkle-Can.jpg",
+                "Zep-on-the-Jukebox-Final-Can.jpg"
+            ] 
         },
         { 
             "dirName" : "Portraits",
-            "files" : [] 
+            "files" : [
+                "bud.jpg",
+                "bukowski.jpg",
+                "chuck-Berry.jpg",
+                "hotel-budapest.jpg",
+                "Howlin-Wolf.jpg",
+                "Jeff-Tweedy.jpg",
+                "lou-reed.jpg",
+                "Nixon.jpg",
+                "Pat-Murphy.jpg",
+                "ruth-final.jpg",
+                "tenebaums.jpg",
+                "zissou-reformat.jpg"
+            ] 
         },
         { 
             "dirName" : "Posters-Prints",
-            "files" : []
+            "files" : [
+                "Arch-St-3-15.jpg",
+                "blobs-1.jpg",
+                "carl-sagan.jpg",
+                "dazed-final-full.jpg",
+                "Ginaz.jpg",
+                "John-Diefenbaker-2.jpg",
+                "left-half.jpg",
+                "leisure-wolf.jpg",
+                "No-Country.jpg",
+                "ocean-soldier.jpg",
+                "st-jude-final.jpg"
+            ]
         }
     ]
 }
