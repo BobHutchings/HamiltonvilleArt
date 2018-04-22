@@ -19,6 +19,7 @@ HamiltonvilleArt.ImageLoader = (function() {
     function loadImages(reqObj) {
         if ((typeof reqObj.response === 'string') || (typeof reqObj.responseText === 'string')) {
             var respStr = (typeof reqObj.response === 'string') ? reqObj.response : reqObj.responseText;
+            var catCount = 0;
 
             try {
                 var i, j;
@@ -27,6 +28,7 @@ HamiltonvilleArt.ImageLoader = (function() {
                 // Build the Image Cache object.
                 for (i = 0; i < cfgData.artworkImgs.length; i++) {
                     imgCache[ cfgData.artworkImgs[i].dirName ] = [];
+                    catCount++;
 
                     for (j = 0; j < cfgData.artworkImgs[i].files.length; j++) {
                         var img = new Image();
@@ -38,7 +40,11 @@ HamiltonvilleArt.ImageLoader = (function() {
                     }
                 }
 
-                console.dir(imgCache);
+                HamiltonvilleArt.Log.write({
+                    obj: NAME,
+                    fun: 'loadImages',
+                    msg: 'Image Cache successfully populated. Image Category Count = ' + catCount
+                });
 
             } catch (err) {
                 HamiltonvilleArt.Log.write({
@@ -58,12 +64,21 @@ HamiltonvilleArt.ImageLoader = (function() {
     }
 
     // API Function: Get Images
-    function getImages(imgDirName) {
+    // Give an Image Category Name (i.e. an image directory name) return the paths for all images in the category.
+    function getImgPaths(imgCatName) {
+
+    }
+
+    // API Function: Get Image Categories.
+    // Returns an array of the the available image categories.
+    // Category names are also image directory names.
+    function getImgCats() {
 
     }
 
     // Public API
     return {
-        getImages: getImages
+        getImgPaths : getImgPaths,
+        getImgCats  : getImgCats
     };
 })();
