@@ -1,4 +1,6 @@
 HamiltonvilleArt.ImageLoader = (function() {
+    'use strict';
+
     var NAME = 'HamiltonvilleArt.ImageLoader';
     var isReady = false; // Set to TRUE when loadImages() is done.
 

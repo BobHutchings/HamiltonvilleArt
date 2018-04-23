@@ -3,6 +3,7 @@ var HamiltonvilleArt = {};
 
 // Initialize the app.
 (function() {
+    'use strict';
 
     // Figure out when the Image Loader has finished doing its thing
     var interval = window.setInterval(
