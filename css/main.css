@@ -6,15 +6,27 @@ body {
     height: 100%;
 }
 
-header {
-    position: relative;
-    top: 10%;
-    left: 10%;
-}
-
 header img {
     height: 100px;
 }
+
+header {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+nav {
+    cursor: pointer;
+
+    position: absolute;
+    top: 17%;
+    left: 5%;
+}
+
+/*
+ * Animated "Loading" Gif 
+ */
 
 #hva_loading img {
       height: 100px;
