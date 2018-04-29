@@ -22,12 +22,15 @@ HamiltonvilleArt.NavBuilder = (function() {
                     var txt = document.createTextNode(cats[i]);
                     var aClass = document.createAttribute('class');
                     var aId = document.createAttribute('id');
+                    var aCat = document.createAttribute('data-cat');
 
                     aClass.value = 'hva_cat-link';
                     aId.value = 'hva_' + cats[i];
+                    aCat.value = cats[i];
 
                     div.setAttributeNode(aClass);
                     div.setAttributeNode(aId);
+                    div.setAttributeNode(aCat);
                     div.appendChild(txt);
 
                     navElmt.appendChild(div);
@@ -48,17 +51,15 @@ HamiltonvilleArt.NavBuilder = (function() {
 
     // The user has clicked a Nav link.
     function onNavClick(evt) {
-        console.dir(evt);
-
-        // Cycle through the list of nav links & remove the "active" class from any that have it.
-        var i, clickTarget;
+        var i, clickTarget, catName;
         var navElmtList = navElmt.querySelectorAll('.hva_cat-link');
 
+        // Cycle through the list of nav links & remove the "active" class from any that have it.
         for (i = 0; i < navElmtList.length; i++) {
             navElmtList[i].className = 'hva_cat-link';
         }
 
-        // Set the clicked link as "active"
+        // Get the Click-Target.
         if (evt.originalTarget && evt.originalTarget !== null) {
             clickTarget = evt.originalTarget;
         
@@ -66,10 +67,12 @@ HamiltonvilleArt.NavBuilder = (function() {
             clickTarget = evt.target;
         }
 
+        // Set the clicked link as "active"
         clickTarget.className = 'hva_cat-link active';
 
         // Tell the Category Builder to show the selected set of images.
-        
+        catName = clickTarget.getAttribute('data-cat');
+        HamiltonvilleArt.CatBuilder.showCatImages(catName);
     }
 
     // Public API

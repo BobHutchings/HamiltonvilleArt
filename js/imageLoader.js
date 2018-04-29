@@ -3,6 +3,7 @@ HamiltonvilleArt.ImageLoader = (function() {
 
     var NAME = 'HamiltonvilleArt.ImageLoader';
     var isReady = false; // Set to TRUE when loadImages() is done.
+    var defaultCat;
 
     // Image Cache
     // POJO
@@ -41,6 +42,21 @@ HamiltonvilleArt.ImageLoader = (function() {
                         imgCache[ cfgData.artworkImgs[i].dirName ].push(path);
                         img.src = path;
                     }
+                }
+
+                // Figure out which Image Category is the default.
+                // The default category will be displayed when the site initially loads.
+                for (i = 0; i < cfgData.artworkImgs.length; i++) {
+                    if (cfgData.artworkImgs[i].default) {
+                        defaultCat = cfgData.artworkImgs[i].dirName;
+                        break;
+                    }
+                }
+                
+                // Make sure we got a default category.
+                // If not, just use the first one.
+                if (!defaultCat) {
+                    defaultCat = cfgData.artworkImgs[0].dirName;
                 }
 
                 HamiltonvilleArt.Log.write({
@@ -92,15 +108,23 @@ HamiltonvilleArt.ImageLoader = (function() {
         return Object.keys(imgCache);
     }
 
+    // API Function: Get Ready State.
     // Return a Boolean indicating whether or not the Image Cache has finished initializing.
     function getReadyState() {
         return isReady;
+    }
+
+    // API Function: Get Default Category Name
+    // This is the category of images to show when the site first loads.
+    function getDefaultCat() {
+        return defaultCat;
     }
 
     // Public API
     return {
         getImgPaths   : getImgPaths,
         getImgCats    : getImgCats,
-        getReadyState : getReadyState
+        getReadyState : getReadyState,
+        getDefaultCat : getDefaultCat
     };
 })();

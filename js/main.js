@@ -9,9 +9,12 @@ var HamiltonvilleArt = {};
     var interval = window.setInterval(
         function() {
             var imgCats;
+            var defaultCat;
 
             if (HamiltonvilleArt.ImageLoader) {
                 if (HamiltonvilleArt.ImageLoader.getReadyState()) {
+                    window.clearInterval(interval);
+
                     HamiltonvilleArt.Log.write({
                         obj: 'Main',
                         fun: 'Main',
@@ -25,7 +28,9 @@ var HamiltonvilleArt = {};
                     imgCats = HamiltonvilleArt.ImageLoader.getImgCats();
                     HamiltonvilleArt.NavBuilder.buildNav(imgCats);
 
-                    window.clearInterval(interval);
+                    // Show the default image category
+                    defaultCat = HamiltonvilleArt.ImageLoader.getDefaultCat();
+                    HamiltonvilleArt.CatBuilder.showCatImages(defaultCat);
                 }
             }
         }, 100
