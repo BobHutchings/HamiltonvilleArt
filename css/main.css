@@ -27,6 +27,15 @@ nav {
 }
 
 /*
+ * Nav Links
+ */
+
+ .hva_cat-link:hover,
+ .hva_cat-link.active {
+    font-weight: 700;
+ }
+
+/*
  * Animated "Loading" Gif 
  */
 
