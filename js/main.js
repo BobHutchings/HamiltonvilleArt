@@ -31,6 +31,7 @@ var HamiltonvilleArt = {};
                     // Show the default image category
                     defaultCat = HamiltonvilleArt.ImageLoader.getDefaultCat();
                     HamiltonvilleArt.CatBuilder.showCatImages(defaultCat);
+                    HamiltonvilleArt.NavBuilder.setActiveLink(defaultCat);
                 }
             }
         }, 100

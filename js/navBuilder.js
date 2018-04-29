@@ -51,32 +51,49 @@ HamiltonvilleArt.NavBuilder = (function() {
 
     // The user has clicked a Nav link.
     function onNavClick(evt) {
-        var i, clickTarget, catName;
-        var navElmtList = navElmt.querySelectorAll('.hva_cat-link');
-
-        // Cycle through the list of nav links & remove the "active" class from any that have it.
-        for (i = 0; i < navElmtList.length; i++) {
-            navElmtList[i].className = 'hva_cat-link';
-        }
+        var clickTarget, catName;
 
         // Get the Click-Target.
         if (evt.originalTarget && evt.originalTarget !== null) {
             clickTarget = evt.originalTarget;
-        
+
         } else {
             clickTarget = evt.target;
         }
 
-        // Set the clicked link as "active"
-        clickTarget.className = 'hva_cat-link active';
-
-        // Tell the Category Builder to show the selected set of images.
+        // Get the Image Category Name from the clicked link.
         catName = clickTarget.getAttribute('data-cat');
+
+        // Activate the clicked link.
+        setActiveLink(catName);
+
+        // Show the images associated with the selected category.
         HamiltonvilleArt.CatBuilder.showCatImages(catName);
+    }
+
+    // Programatically set the specified category link to be the active link.
+    function setActiveLink(catName) {
+        var navElmtList, linkElmt, i;
+
+        if (typeof catName === 'string' && catName.length > 0) {
+            navElmtList = navElmt.querySelectorAll('.hva_cat-link');
+
+            // Cycle through the list of nav links & remove the "active" class from any that have it.
+            for (i = 0; i < navElmtList.length; i++) {
+                navElmtList[i].className = 'hva_cat-link';
+            }
+
+            // Grab the link to be set as "active"
+            linkElmt = navElmt.querySelector('[data-cat="' + catName + '"]');
+
+            // Set the clicked link as "active"
+            linkElmt.className = 'hva_cat-link active';
+        }
     }
 
     // Public API
     return {
-        buildNav : buildNav
+        buildNav : buildNav,
+        setActiveLink: setActiveLink
     };
 })();
