@@ -50,3 +50,27 @@ nav {
     left: 50%;
     margin: -50px 0 0 -50px;
 }
+
+/*
+ * Category Images 
+ */
+
+ #hva_main {
+     position: absolute;
+     top: 17%;
+     left: 30%;
+ }
+
+.hva_cat-img {
+    border: none;
+    margin-bottom: 10px; 
+}
+
+.hva_cat-img.first {
+    margin-top: 0;
+}
+
+.hva_cat-img.last {
+    margin-bottom: 0;
+} 
+
