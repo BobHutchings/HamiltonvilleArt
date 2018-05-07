@@ -77,3 +77,7 @@ nav {
 .hva_cat-img {
     border: none;
 }
+
+.hva_cat-img-caption.empty {
+    display: none;
+}

@@ -16,6 +16,7 @@ HamiltonvilleArt.CatBuilder = (function() {
                 imgContainer.innerHTML = '';
 
                 for (i = 0; i < imgPaths.length; i++) {
+                    // DIV to act as a container for the IMG.
                     var div = document.createElement('div');
                     var divClass = document.createAttribute('class');
 
@@ -30,6 +31,7 @@ HamiltonvilleArt.CatBuilder = (function() {
 
                     div.setAttributeNode(divClass);
 
+                    // IMG Element to display the piece of artwork.
                     var img = document.createElement('img');
                     var imgClass = document.createAttribute('class');
                     var imgSrc = document.createAttribute('src');
@@ -40,7 +42,22 @@ HamiltonvilleArt.CatBuilder = (function() {
                     img.setAttributeNode(imgClass)
                     img.setAttributeNode(imgSrc);
 
+                    // P element to hold the caption text.
+                    var caption = document.createElement('p');
+                    var capClass = document.createAttribute('class');
+
+                    capClass.value = 'hva_cat-img-caption';
+
+                    if (imgCaptions[i].length === 0) {
+                        capClass.value += ' empty';
+                    }
+
+                    caption.setAttributeNode(capClass);
+                    caption.textContent = imgCaptions[i];
+
+                    // Add to the DOM
                     div.appendChild(img);
+                    div.appendChild(caption);
                     imgContainer.appendChild(div);
                 }
             
