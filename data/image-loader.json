@@ -1,85 +1,229 @@
 {
-    "artworkImgs" : [
-        { 
-            "dirName" : "About",
-            "default" : false,
-            "files" : [
-                { "path" : "artist-photo.jpg", "caption" : "This is a test caption." }
+    "artworkImgs": [
+        {
+            "dirName": "About",
+            "default": false,
+            "files": [
+                {
+                    "path": "artist-photo.jpg",
+                    "caption": "This is a test caption."
+                }
             ]
         },
-        { 
-            "dirName" : "Illustration",
-            "default" : true,
-            "caption" : "",
-            "files" : [
-                { "path" : "burger-plate.jpg", "caption" : "" },
-                { "path" : "caravan.jpg", "caption" : "" },
-                { "path" : "chameleon-punk-color.jpg", "caption" : "" },
-                { "path" : "critic-rectangle.jpg", "caption" : "" },
-                { "path" : "horse-lady.jpg", "caption" : "" },
-                { "path" : "il-sung.jpg", "caption" : "" },
-                { "path" : "NMVNA-2016-Breakfast-Card-Front-CMYK.jpg", "caption" : "" },
-                { "path" : "pointy-boots-2", "caption" : "" },
-                { "path" : "punks.jpg", "caption" : "" },
-                { "path" : "Sized-Postcard-Frontb-7x5-2015.jpg", "caption" : "" },
-                { "path" : "Snake-1.jpg", "caption" : "" },
-                { "path" : "x-moonrise-2.jpg", "caption" : "" }
-            ] 
+        {
+            "dirName": "Illustration",
+            "default": true,
+            "caption": "",
+            "files": [
+                {
+                    "path": "burger-plate.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "caravan.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "chameleon-punk-color.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "critic-rectangle.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "horse-lady.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "il-sung.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "NMVNA-2016-Breakfast-Card-Front-CMYK.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "pointy-boots-2",
+                    "caption": ""
+                },
+                {
+                    "path": "punks.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Sized-Postcard-Frontb-7x5-2015.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Snake-1.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "x-moonrise-2.jpg",
+                    "caption": ""
+                }
+            ]
         },
-        { 
-            "dirName" : "Labels",
-            "default" : false,
-            "caption" : "",
-            "files" : [
-                { "path" : "Air-Guitar-At-Work-While-No-One-Is-Watching-Can.jpg", "caption" : "" },
-                { "path" : "Averill-Ice-Cider-Printer.jpg", "caption" : "" },
-                { "path" : "Awkward-Hug-Can.jpg", "caption" : "" },
-                { "path" : "Buddy-Sprinkles-Saves-the-Day-Can.jpg", "caption" : "" },
-                { "path" : "Candy-Cap-Can.jpg", "caption" : "" },
-                { "path" : "Just-Gonna-Can.jpg", "caption" : "" },
-                { "path" : "Maybe-Both-Can.jpg", "caption" : "" },
-                { "path" : "Pankcake-Town-Can.jpg", "caption" : "" },
-                { "path" : "Shadow-Pyramids-Final.jpg", "caption" : "" },
-                { "path" : "Substrate-A-Can.jpg", "caption" : "" },
-                { "path" : "Super-Sparkle-Can.jpg", "caption" : "" },
-                { "path" : "Zep-on-the-Jukebox-Final-Can.jpg", "caption" : "" }
-            ] 
+        {
+            "dirName": "Labels",
+            "default": false,
+            "caption": "",
+            "files": [
+                {
+                    "path": "Air-Guitar-At-Work-While-No-One-Is-Watching-Can.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Averill-Ice-Cider-Printer.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Awkward-Hug-Can.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Buddy-Sprinkles-Saves-the-Day-Can.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Candy-Cap-Can.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Just-Gonna-Can.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Maybe-Both-Can.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Pankcake-Town-Can.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Shadow-Pyramids-Final.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Substrate-A-Can.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Super-Sparkle-Can.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Zep-on-the-Jukebox-Final-Can.jpg",
+                    "caption": ""
+                }
+            ]
         },
-        { 
-            "dirName" : "Portraits",
-            "default" : false,
-            "caption" : "",
-            "files" : [
-                { "path" : "bud.jpg", "caption" : "" },
-                { "path" : "bukowski.jpg", "caption" : "" },
-                { "path" : "chuck-Berry.jpg", "caption" : "" },
-                { "path" : "hotel-budapest.jpg", "caption" : "" },
-                { "path" : "Howlin-Wolf.jpg", "caption" : "" },
-                { "path" : "Jeff-Tweedy.jpg", "caption" : "" },
-                { "path" : "lou-reed.jpg", "caption" : "" },
-                { "path" : "Nixon.jpg", "caption" : "" },
-                { "path" : "Pat-Murphy.jpg", "caption" : "" },
-                { "path" : "ruth-final.jpg", "caption" : "" },
-                { "path" : "tenebaums.jpg", "caption" : "" },
-                { "path" : "zissou-reformat.jpg", "caption" : "" }
-            ] 
+        {
+            "dirName": "Portraits",
+            "default": false,
+            "caption": "",
+            "files": [
+                {
+                    "path": "bud.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "bukowski.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "chuck-Berry.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "hotel-budapest.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Howlin-Wolf.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Jeff-Tweedy.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "lou-reed.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Nixon.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Pat-Murphy.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "ruth-final.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "tenebaums.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "zissou-reformat.jpg",
+                    "caption": ""
+                }
+            ]
         },
-        { 
-            "dirName" : "Posters-Prints",
-            "default" : false,
-            "caption" : "",
-            "files" : [
-                { "path" : "Arch-St-3-15.jpg", "caption" : "" },
-                { "path" : "blobs-1.jpg", "caption" : "" },
-                { "path" : "carl-sagan.jpg", "caption" : "" },
-                { "path" : "dazed-final-full.jpg", "caption" : "" },
-                { "path" : "Ginaz.jpg", "caption" : "" },
-                { "path" : "John-Diefenbaker-2.jpg", "caption" : "" },
-                { "path" : "left-half.jpg", "caption" : "" },
-                { "path" : "leisure-wolf.jpg", "caption" : "" },
-                { "path" : "No-Country.jpg", "caption" : "" },
-                { "path" : "ocean-soldier.jpg", "caption" : "" },
-                { "path" : "st-jude-final.jpg", "caption" : "" }
+        {
+            "dirName": "Posters-Prints",
+            "default": false,
+            "caption": "",
+            "files": [
+                {
+                    "path": "Arch-St-3-15.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "blobs-1.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "carl-sagan.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "dazed-final-full.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "Ginaz.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "John-Diefenbaker-2.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "left-half.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "leisure-wolf.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "No-Country.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "ocean-soldier.jpg",
+                    "caption": ""
+                },
+                {
+                    "path": "st-jude-final.jpg",
+                    "caption": ""
+                }
             ]
         }
     ]

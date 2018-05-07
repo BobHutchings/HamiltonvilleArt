@@ -5,34 +5,43 @@ HamiltonvilleArt.CatBuilder = (function() {
 
     // Display the images belonging to the supplied Category Name, in the Main Content area.
     function showCatImages(catName) {
-        var i, imgPaths, imgContainer;
+        var i, imgPaths, imgCaptions, imgContainer;
 
         if (typeof catName === 'string' && catName.length > 0) {
             imgPaths = HamiltonvilleArt.ImageLoader.getImgPaths(catName);
+            imgCaptions = HamiltonvilleArt.ImageLoader.getImgCaptions(catName);
             imgContainer = document.getElementById('hva_main');
 
             if (imgContainer instanceof HTMLElement) {
                 imgContainer.innerHTML = '';
 
                 for (i = 0; i < imgPaths.length; i++) {
-                    var img = document.createElement('img');
-                    var aClass = document.createAttribute('class');
-                    var aSrc = document.createAttribute('src');
+                    var div = document.createElement('div');
+                    var divClass = document.createAttribute('class');
 
-                    aClass.value = 'hva_cat-img';
+                    divClass.value = 'hva_cat-img-wrap';
 
                     if (i === 0) {
-                        aClass.value += ' first';
+                        divClass.value += ' first';
                     
                     } else if (i === (imgPaths.length - 1)) {
-                        aClass.value += ' last';
+                        divClass.value += ' last';
                     }
 
-                    aSrc.value = imgPaths[i];
+                    div.setAttributeNode(divClass);
 
-                    img.setAttributeNode(aClass)
-                    img.setAttributeNode(aSrc);
-                    imgContainer.appendChild(img);
+                    var img = document.createElement('img');
+                    var imgClass = document.createAttribute('class');
+                    var imgSrc = document.createAttribute('src');
+
+                    imgClass.value = 'hva_cat-img';
+                    imgSrc.value = imgPaths[i];
+
+                    img.setAttributeNode(imgClass)
+                    img.setAttributeNode(imgSrc);
+
+                    div.appendChild(img);
+                    imgContainer.appendChild(div);
                 }
             
             } else {

@@ -92,7 +92,24 @@ HamiltonvilleArt.ImageLoader = (function() {
         }
     }
 
-    // API Function: Get Images
+    // API Function: Get Image Captions
+    // Give an Image Category Name (i.e. an image directory name) return the captions for all images in the category.
+    function getImgCaptions(imgCatName) {
+        if (typeof imgCatName === 'string') {
+            return imgCache[imgCatName].captions;
+        
+        } else {
+            HamiltonvilleArt.Log.write({
+                obj: NAME,
+                fun: 'getImgCaptions',
+                msg: 'ERROR. Invalid/Missing Image Category Name.'
+            });
+
+            return undefined;
+        }
+    }
+
+    // API Function: Get Image Paths
     // Give an Image Category Name (i.e. an image directory name) return the paths for all images in the category.
     function getImgPaths(imgCatName) {
         if (typeof imgCatName === 'string') {
@@ -130,9 +147,10 @@ HamiltonvilleArt.ImageLoader = (function() {
 
     // Public API
     return {
-        getImgPaths   : getImgPaths,
-        getImgCats    : getImgCats,
-        getReadyState : getReadyState,
-        getDefaultCat : getDefaultCat
+        getImgPaths    : getImgPaths,
+        getImgCaptions : getImgCaptions,
+        getImgCats     : getImgCats,
+        getReadyState  : getReadyState,
+        getDefaultCat  : getDefaultCat
     };
 })();

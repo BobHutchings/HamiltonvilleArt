@@ -55,22 +55,25 @@ nav {
  * Category Images 
  */
 
- #hva_main {
+#hva_main {
      position: absolute;
      top: 17%;
      left: 30%;
  }
 
-.hva_cat-img {
+.hva_cat-img-wrap {
     border: none;
     margin-bottom: 10px; 
 }
 
-.hva_cat-img.first {
+.hva_cat-img-wrap.first {
     margin-top: 0;
 }
 
-.hva_cat-img.last {
+.hva_cat-img-wrap.last {
     margin-bottom: 0;
 } 
 
+.hva_cat-img {
+    border: none;
+}
