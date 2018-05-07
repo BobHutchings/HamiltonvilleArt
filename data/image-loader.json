@@ -2,14 +2,14 @@
     "artworkImgs" : [
         { 
             "dirName" : "About",
-            "default" : true,
+            "default" : false,
             "files" : [
                 "artist-photo.jpg"
             ]
         },
         { 
             "dirName" : "Illustration",
-            "default" : false,
+            "default" : true,
             "files" : [
                 "burger-plate.jpg",
                 "caravan.jpg",
