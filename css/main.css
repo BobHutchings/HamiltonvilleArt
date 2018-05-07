@@ -78,6 +78,10 @@ nav {
     border: none;
 }
 
+.hva_cat-img-caption {
+    font-weight: 500;
+}
+
 .hva_cat-img-caption.empty {
     display: none;
 }
