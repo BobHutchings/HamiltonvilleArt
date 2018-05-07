@@ -5,10 +5,13 @@ HamiltonvilleArt.ImageLoader = (function() {
     var isReady = false; // Set to TRUE when loadImages() is done.
     var defaultCat;
 
-    // Image Cache
-    // POJO
+    // Image Cache - POJO
     // Each property corresponds to a Dir name on the server, containing a given set of image files.
-    // The value of each property is an Array of image file names. All of which have been cached by the browser.
+    // The value of each property is an Object that looks like this:
+    // {
+    //    files: <Array of image file names. All of which have been cached by the browser.>
+    //    captions: <Array of Strings. 1 for each file in the "files" Array.>
+    // }
     var imgCache = Object.create(null);
 
     // Get ImageLoader configuration data
@@ -31,15 +34,20 @@ HamiltonvilleArt.ImageLoader = (function() {
 
                 // Build the Image Cache object.
                 for (i = 0; i < cfgData.artworkImgs.length; i++) {
-                    imgCache[ cfgData.artworkImgs[i].dirName ] = [];
+                    imgCache[ cfgData.artworkImgs[i].dirName ] = Object.create(null);
+                    imgCache[ cfgData.artworkImgs[i].dirName ].files = [];
+                    imgCache[ cfgData.artworkImgs[i].dirName ].captions = [];
+
                     catCount++;
 
                     for (j = 0; j < cfgData.artworkImgs[i].files.length; j++) {
                         var img = new Image();
-                        var path = 'assets/' + cfgData.artworkImgs[i].dirName + '/' + cfgData.artworkImgs[i].files[j];
+                        var path = 'assets/' + cfgData.artworkImgs[i].dirName + '/' + cfgData.artworkImgs[i].files[j].path;
+                        var text = cfgData.artworkImgs[i].files[j].caption;
                         
                         // Cache the image.
-                        imgCache[ cfgData.artworkImgs[i].dirName ].push(path);
+                        imgCache[ cfgData.artworkImgs[i].dirName ].files.push(path);
+                        imgCache[ cfgData.artworkImgs[i].dirName ].captions.push(text);
                         img.src = path;
                     }
                 }
@@ -88,7 +96,7 @@ HamiltonvilleArt.ImageLoader = (function() {
     // Give an Image Category Name (i.e. an image directory name) return the paths for all images in the category.
     function getImgPaths(imgCatName) {
         if (typeof imgCatName === 'string') {
-            return imgCache[imgCatName];
+            return imgCache[imgCatName].files;
         
         } else {
             HamiltonvilleArt.Log.write({

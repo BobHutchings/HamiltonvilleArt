@@ -4,78 +4,82 @@
             "dirName" : "About",
             "default" : false,
             "files" : [
-                "artist-photo.jpg"
+                { "path" : "artist-photo.jpg", "caption" : "This is a test caption." }
             ]
         },
         { 
             "dirName" : "Illustration",
             "default" : true,
+            "caption" : "",
             "files" : [
-                "burger-plate.jpg",
-                "caravan.jpg",
-                "chameleon-punk-color.jpg",
-                "critic-rectangle.jpg",
-                "horse-lady.jpg",
-                "il-sung.jpg",
-                "NMVNA-2016-Breakfast-Card-Front-CMYK.jpg",
-                "pointy-boots-2.jpg",
-                "punks.jpg",
-                "Sized-Postcard-Frontb-7x5-2015.jpg",
-                "Snake-1.jpg",
-                "x-moonrise-2.jpg"
+                { "path" : "burger-plate.jpg", "caption" : "" },
+                { "path" : "caravan.jpg", "caption" : "" },
+                { "path" : "chameleon-punk-color.jpg", "caption" : "" },
+                { "path" : "critic-rectangle.jpg", "caption" : "" },
+                { "path" : "horse-lady.jpg", "caption" : "" },
+                { "path" : "il-sung.jpg", "caption" : "" },
+                { "path" : "NMVNA-2016-Breakfast-Card-Front-CMYK.jpg", "caption" : "" },
+                { "path" : "pointy-boots-2", "caption" : "" },
+                { "path" : "punks.jpg", "caption" : "" },
+                { "path" : "Sized-Postcard-Frontb-7x5-2015.jpg", "caption" : "" },
+                { "path" : "Snake-1.jpg", "caption" : "" },
+                { "path" : "x-moonrise-2.jpg", "caption" : "" }
             ] 
         },
         { 
             "dirName" : "Labels",
             "default" : false,
+            "caption" : "",
             "files" : [
-                "Air-Guitar-At-Work-While-No-One-Is-Watching-Can.jpg",
-                "Averill-Ice-Cider-Printer.jpg",
-                "Awkward-Hug-Can.jpg",
-                "Buddy-Sprinkles-Saves-the-Day-Can.jpg",
-                "Candy-Cap-Can.jpg",
-                "Just-Gonna-Can.jpg",
-                "Maybe-Both-Can.jpg",
-                "Pankcake-Town-Can.jpg",
-                "Shadow-Pyramids-Final.jpg",
-                "Substrate-A-Can.jpg",
-                "Super-Sparkle-Can.jpg",
-                "Zep-on-the-Jukebox-Final-Can.jpg"
+                { "path" : "Air-Guitar-At-Work-While-No-One-Is-Watching-Can.jpg", "caption" : "" },
+                { "path" : "Averill-Ice-Cider-Printer.jpg", "caption" : "" },
+                { "path" : "Awkward-Hug-Can.jpg", "caption" : "" },
+                { "path" : "Buddy-Sprinkles-Saves-the-Day-Can.jpg", "caption" : "" },
+                { "path" : "Candy-Cap-Can.jpg", "caption" : "" },
+                { "path" : "Just-Gonna-Can.jpg", "caption" : "" },
+                { "path" : "Maybe-Both-Can.jpg", "caption" : "" },
+                { "path" : "Pankcake-Town-Can.jpg", "caption" : "" },
+                { "path" : "Shadow-Pyramids-Final.jpg", "caption" : "" },
+                { "path" : "Substrate-A-Can.jpg", "caption" : "" },
+                { "path" : "Super-Sparkle-Can.jpg", "caption" : "" },
+                { "path" : "Zep-on-the-Jukebox-Final-Can.jpg", "caption" : "" }
             ] 
         },
         { 
             "dirName" : "Portraits",
             "default" : false,
+            "caption" : "",
             "files" : [
-                "bud.jpg",
-                "bukowski.jpg",
-                "chuck-Berry.jpg",
-                "hotel-budapest.jpg",
-                "Howlin-Wolf.jpg",
-                "Jeff-Tweedy.jpg",
-                "lou-reed.jpg",
-                "Nixon.jpg",
-                "Pat-Murphy.jpg",
-                "ruth-final.jpg",
-                "tenebaums.jpg",
-                "zissou-reformat.jpg"
+                { "path" : "bud.jpg", "caption" : "" },
+                { "path" : "bukowski.jpg", "caption" : "" },
+                { "path" : "chuck-Berry.jpg", "caption" : "" },
+                { "path" : "hotel-budapest.jpg", "caption" : "" },
+                { "path" : "Howlin-Wolf.jpg", "caption" : "" },
+                { "path" : "Jeff-Tweedy.jpg", "caption" : "" },
+                { "path" : "lou-reed.jpg", "caption" : "" },
+                { "path" : "Nixon.jpg", "caption" : "" },
+                { "path" : "Pat-Murphy.jpg", "caption" : "" },
+                { "path" : "ruth-final.jpg", "caption" : "" },
+                { "path" : "tenebaums.jpg", "caption" : "" },
+                { "path" : "zissou-reformat.jpg", "caption" : "" }
             ] 
         },
         { 
             "dirName" : "Posters-Prints",
             "default" : false,
+            "caption" : "",
             "files" : [
-                "Arch-St-3-15.jpg",
-                "blobs-1.jpg",
-                "carl-sagan.jpg",
-                "dazed-final-full.jpg",
-                "Ginaz.jpg",
-                "John-Diefenbaker-2.jpg",
-                "left-half.jpg",
-                "leisure-wolf.jpg",
-                "No-Country.jpg",
-                "ocean-soldier.jpg",
-                "st-jude-final.jpg"
+                { "path" : "Arch-St-3-15.jpg", "caption" : "" },
+                { "path" : "blobs-1.jpg", "caption" : "" },
+                { "path" : "carl-sagan.jpg", "caption" : "" },
+                { "path" : "dazed-final-full.jpg", "caption" : "" },
+                { "path" : "Ginaz.jpg", "caption" : "" },
+                { "path" : "John-Diefenbaker-2.jpg", "caption" : "" },
+                { "path" : "left-half.jpg", "caption" : "" },
+                { "path" : "leisure-wolf.jpg", "caption" : "" },
+                { "path" : "No-Country.jpg", "caption" : "" },
+                { "path" : "ocean-soldier.jpg", "caption" : "" },
+                { "path" : "st-jude-final.jpg", "caption" : "" }
             ]
         }
     ]
