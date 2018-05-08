@@ -85,3 +85,32 @@ nav {
 .hva_cat-img-caption.empty {
     display: none;
 }
+
+/*
+ * Responsive
+ */
+ @media (max-width: 800px) {
+    header {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    nav {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    #hva_main {
+        text-align: center;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    #hva_navigation {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+ }

@@ -7,7 +7,7 @@
  * @class
  * @returns {Object} API
  */
-HamiltonvilleArt.Log = (() => {
+HamiltonvilleArt.Log = (function() {
     'use strict';
     
     /**
